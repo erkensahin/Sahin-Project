@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: |
+  This cfn file is used for creating a template which runs S3 static 
+  web-hosting using cloudfront distribution.
+Parameters:
+  
+   KittensSubDomainName:
+     Description: full domain name like kittens.sahindevops.net
+     Type: String
+     AllowedPattern: (?!-)[a-zA-Z0-9-.]{1,63}(?<!-) 
+
+
+Resources:
+  
+  
+Outputs:
